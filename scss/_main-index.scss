@@ -71,22 +71,25 @@ $tortas:(
 }
 
 main{
-    .seccion2{
-        display: flex;
-        .fservicios{
-            .tortasPostres{
-                width: 200px;
-                height: 200px;
-            }
-            h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
-            .mesadulce{
-                width: 200px;
-                height: 200px;
-            }
-            .boxes{
-                width: 200px;
-                height: 200px;
+    div{
+        .seccion2{
+            .fservicios{
+                .tortasPostres{
+                    width: 200px;
+                    height: 200px;
+                }
+                h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+                .mesadulce{
+                    width: 200px;
+                    height: 200px;
+                }
+                .boxes{
+                    width: 200px;
+                    height: 200px;
+                }
             }
         }
+
     }
+    
 }

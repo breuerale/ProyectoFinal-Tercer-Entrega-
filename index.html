@@ -15,36 +15,53 @@
 <!-- El Maquetado esta bastante vacio, el fondo lo tengo q cambiar y varias cosas. -->
 <body>
     <!-- Uso la clase container-fluid que ocupa el 100% del ancho del dispositivo -->
-    <header class="gridEncabezado">
-        <div class="menue1">
-            <nav class="nav1">
-                <ul class="menu1">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/novedades.html">Novedades</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    
-        <div class="logotipo" data-aos="fade-down">
-            <img class="logo" src="assets/image/logo.jpg" alt="logo">
-        </div>
-    
-        <div class="menue2">
-            <nav class="nav2">
-                <ul class="menu2">
-                    <li><a href="pages/ubicacion.html">Ubicacion</a></li>
-                    <li><a href="pages/productos.html">Productos</a></li>
-                    <li><a href="pages/nosotras.html">Nosotras</a></li>
-                </ul>
-            </nav>
-        </div>
-    
-        <div class="iconos">
-            <i class="fa-solid fa-right-to-bracket "></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lavenderblush;">
+            <div class="container">
+                <a class="navbar-brand navbar-toggler" href="#">
+                    <img class="logo" src="assets/image/logo.jpg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><b>Inicio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/novedades.html"><b>Novedades</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contactos.html"><b>Contacto</b></a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a class="navbar-brand collapse navbar-collapse " href="index.html">
+                            <img class="logo" src="assets/image/logo.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/ubicacion.html"><b>Ubicacion</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/productos.html"><b>Productos</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nosotras.html"><b>Nosotras</b></a>
+                        </li>
+                        </li>
+                    </ul>
+                    <div class="iconos">
+                        <i class="fa-solid fa-right-to-bracket "></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </header>
     
     <main>
         <section class="container seccion1">
@@ -105,20 +122,23 @@
             <h2 class="titulo3">Productos</h2>
         </section>
         <!-- A la seccion 2 la hago con Bootstrap, le aplico a las imagenes, para que esten mas prolijas -->
-        <section class="seccion2">
-            <div class="mx-auto fservicios" style="width: 200px" ;>
-                <img src="assets/image/rogel.jpg" class="rounded mx-auto d-block tortasPostres" alt="...">
-                <h3 class="fservicios-subtitulo1">Tortas y Postres</h3>
-            </div>
-            <div class="mx-auto fservicios" style="width: 200px">
-                <img src="assets/image/pepitos.jpg" class="rounded mx-auto d-block mesadulce" alt="...">
-                <h3 class="fservicios-subtitulo1">Mesa Dulce</h3>
-            </div>
-            <div class="mx-auto fservicios" style="width: 200px">
-                <img src="assets/image/box2.jpg" class="rounded mx-auto d-block boxes" alt="...">
-                <h3 class="fservicios-subtitulo1">Boxes</h3>
+        <section class=" container seccion2">
+            <div class="row">
+                <div class=" col-lg-4 col-12 mx-auto fservicios" style="width: 200px" ;>
+                    <img src="assets/image/rogel.jpg" class="rounded mx-auto d-block img-fluid tortasPostres" alt="...">
+                    <h3 class="fservicios-subtitulo1">Tortas y Postres</h3>
+                </div>
+                <div class="col-lg-4 col-12 mx-auto fservicios" style="width: 200px">
+                    <img src="assets/image/pepitos.jpg" class="rounded mx-auto d-block img-fluid mesadulce" alt="...">
+                    <h3 class="fservicios-subtitulo1">Mesa Dulce</h3>
+                </div>
+                <div class="col-lg-4 col-12 mx-auto fservicios" style="width: 200px">
+                    <img src="assets/image/box2.jpg" class="rounded mx-auto d-block img-fluid boxes" alt="...">
+                    <h3 class="fservicios-subtitulo1">Boxes</h3>
+                </div>
             </div>
         </section>
+    </main>
     </main>
     
     <footer class="container-fluid footer">

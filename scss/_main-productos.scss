@@ -1,0 +1,25 @@
+//Productos
+
+.prod-1 {
+    display: flex;
+    justify-content: space-between;
+
+    .contenedor-productos {
+        display: flex;
+        justify-content: space-between;
+        .titulo-productos{
+            text-transform: uppercase;
+        }
+    }
+
+    .contenedor-barra {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.prod-card{
+    justify-content: space-around;
+    padding: 5px;
+}
+

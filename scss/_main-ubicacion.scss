@@ -1,0 +1,15 @@
+//Ubicacion:
+
+section{
+    .ubicacion-fila{
+        margin: 3%;
+        .ubicacion-contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .parrafoubi{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+    }
+}

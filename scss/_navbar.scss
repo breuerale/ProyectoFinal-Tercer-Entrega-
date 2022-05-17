@@ -29,67 +29,49 @@
     font-size: larger;
 }
 
-@mixin uls{
-    display: flex;
+@mixin menus{
     list-style-type: none;
-    justify-content: space-evenly;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.menu1 {
+    @include menus;
+
+    li {
+        &:hover,
+        &:active {
+            background-color: $colorHover;
+            @include lis(500, large, none, pointer, uppercase, .3s ease all, 5px)
+        }
+        a {
+            @include as;
+        }
+    }
+}
+
+.logo{
+    width: 100%;
+    padding-top: 10px;
+    width: 150px ;
+    height:150px ;
+    border-radius: 50%;
 }
 
 
-header{
-    display: grid;
-    align-items: center;
-    grid-template-areas: "menue1 logotipo menue2 iconos";
-    grid-template:       "menue1 logotipo menue2 iconos" 150px /
-                            38.5%     20%     38.5%  auto;
-    background-color: $colorFondo;
-    .menue1{
-        nav{
-            ul{
-                @include uls;
-                li{
-                    &:hover, &:active{
-                        background-color:$colorHover;
-                        @include lis(500,large,none,pointer,uppercase, .3s ease all, 5px)
-                    }
-                    a{
-                        @include as;
-                    }
-                }
-            }
-        }
-    }
-    .logotipo{
-        grid-area:logotipo;
-        display: flex;
-        justify-content: space-around;
-        img{
-            padding-top: 10px;
-            width: 150px ;
-            height:150px ;
-            border-radius: 50%;
-        }
-    }
-    .menue2{
-        
-        grid-area: menue2;
-        nav{
-            ul{
-                @include uls;
-                li{
-                    &:hover, &:active{
-                        background-color: $colorHover;
-                        @include lis(500,large,none,pointer,uppercase, .3s ease all, 5px)
-                    }
-                    a{
-                        @include as;
-                    }
-                }
-            }
-        }
-    }
-    .iconos{
-        grid-area: iconos;
-    }
+.menu2 {
+    @include menus;
 
+    li {
+        &:hover,
+        &:active {
+            background-color: $colorHover;
+            @include lis(500, large, none, pointer, uppercase, .3s ease all, 5px)
+        }
+        a {
+            @include as;
+        }
+    }
 }

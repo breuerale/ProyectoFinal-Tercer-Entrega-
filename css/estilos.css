@@ -4,63 +4,56 @@
   margin: 0;
   padding: 0; }
 
-header {
-  display: grid;
-  align-items: center;
-  grid-template-areas: "menue1 logotipo menue2 iconos";
-  grid-template: "menue1 logotipo menue2 iconos" 150px / 38.5%     20%     38.5%  auto;
-  background-color: lavenderblush; }
-  header .menue1 nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly; }
-    header .menue1 nav ul li:hover, header .menue1 nav ul li:active {
-      background-color: #c81ace;
-      font-weight: 500;
-      font-size: large;
-      border: none;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: 0.3s ease all;
-      border-radius: 5px; }
-    header .menue1 nav ul li a {
-      color: #130202;
-      text-decoration: none;
-      font-size: larger;
-      text-transform: uppercase;
-      font-size: larger; }
-  header .logotipo {
-    grid-area: logotipo;
-    display: flex;
-    justify-content: space-around; }
-    header .logotipo img {
-      padding-top: 10px;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; }
-  header .menue2 {
-    grid-area: menue2; }
-    header .menue2 nav ul {
-      display: flex;
-      list-style-type: none;
-      justify-content: space-evenly; }
-      header .menue2 nav ul li:hover, header .menue2 nav ul li:active {
-        background-color: #c81ace;
-        font-weight: 500;
-        font-size: large;
-        border: none;
-        cursor: pointer;
-        text-transform: uppercase;
-        transition: 0.3s ease all;
-        border-radius: 5px; }
-      header .menue2 nav ul li a {
-        color: #130202;
-        text-decoration: none;
-        font-size: larger;
-        text-transform: uppercase;
-        font-size: larger; }
-  header .iconos {
-    grid-area: iconos; }
+.menu1 {
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+  text-transform: uppercase; }
+  .menu1 li:hover, .menu1 li:active {
+    background-color: #c81ace;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease all;
+    border-radius: 5px; }
+  .menu1 li a {
+    color: #130202;
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+    font-size: larger; }
+
+.logo {
+  width: 100%;
+  padding-top: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; }
+
+.menu2 {
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+  text-transform: uppercase; }
+  .menu2 li:hover, .menu2 li:active {
+    background-color: #c81ace;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease all;
+    border-radius: 5px; }
+  .menu2 li a {
+    color: #130202;
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+    font-size: larger; }
 
 * {
   font-family: 'Dancing Script', cursive ,sans-serif;
@@ -105,19 +98,104 @@ main .seccion1 h2 {
 .carrusel div h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-main .seccion2 {
-  display: flex; }
-  main .seccion2 .fservicios .tortasPostres {
-    width: 200px;
-    height: 200px; }
-  main .seccion2 .fservicios h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  main .seccion2 .fservicios .mesadulce {
-    width: 200px;
-    height: 200px; }
-  main .seccion2 .fservicios .boxes {
-    width: 200px;
-    height: 200px; }
+main div .seccion2 .fservicios .tortasPostres {
+  width: 200px;
+  height: 200px; }
+
+main div .seccion2 .fservicios h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+main div .seccion2 .fservicios .mesadulce {
+  width: 200px;
+  height: 200px; }
+
+main div .seccion2 .fservicios .boxes {
+  width: 200px;
+  height: 200px; }
+
+.prod-1 {
+  display: flex;
+  justify-content: space-between; }
+  .prod-1 .contenedor-productos {
+    display: flex;
+    justify-content: space-between; }
+    .prod-1 .contenedor-productos .titulo-productos {
+      text-transform: uppercase; }
+  .prod-1 .contenedor-barra {
+    display: flex;
+    justify-content: flex-end; }
+
+.prod-card {
+  justify-content: space-around;
+  padding: 5px; }
+
+fieldset .cabeza {
+  color: blueviolet;
+  font-size: 27px;
+  padding: 10px; }
+
+fieldset div .bigicon {
+  font-size: 35px;
+  color: pink; }
+
+fieldset div .boton {
+  background-color: pink;
+  color: blueviolet; }
+
+section div .nosotras-titulos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+section div .nosotras-textos {
+  display: flex;
+  flex-direction: column;
+  background-color: lavenderblush; }
+  section div .nosotras-textos p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; }
+
+section .ubicacion-fila {
+  margin: 3%; }
+  section .ubicacion-fila .ubicacion-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    section .ubicacion-fila .ubicacion-contenedor .parrafoubi {
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+section .titulo-novedades-1 {
+  text-align: center;
+  text-transform: uppercase; }
+
+div div .tortamixta-texto {
+  color: red;
+  font-size: x-large; }
+
+div div .tortachoco-texto {
+  color: red;
+  font-size: x-large; }
+
+div div .havanet-texto {
+  color: red;
+  font-size: x-large; }
+
+section .titulo-novedades-2 {
+  text-align: center;
+  text-transform: uppercase; }
+
+div div .box1-texto {
+  color: red;
+  font-size: x-large; }
+
+div div .box2-texto {
+  color: red;
+  font-size: x-large; }
+
+div div .rogel-texto {
+  color: red;
+  font-size: x-large; }
 
 * {
   font-family: 'Dancing Script', cursive ,sans-serif;

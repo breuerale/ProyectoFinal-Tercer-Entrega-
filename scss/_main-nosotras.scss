@@ -1,0 +1,21 @@
+//Nosotras
+
+section{
+    div{
+        .nosotras-titulos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .nosotras-textos{
+            display: flex;
+            flex-direction: column;
+            background-color: lavenderblush;
+            p{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+        }
+    }
+}

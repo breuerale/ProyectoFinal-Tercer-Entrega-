@@ -15,36 +15,52 @@
 
 <body>
     <!-- Uso la clase container-fluid que ocupa el 100% del ancho del dispositivo -->
-    <header class="gridEncabezado">
-
-        <div class="menue1">
-            <nav class="nav1">
-                <ul class="menu1">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="logotipo" data-aos="fade-down">
-            <img class="logo" src="../assets/image/logo.jpg" alt="logo">
-        </div>
-
-        <div class="menue2">
-            <nav class="nav2">
-                <ul class="menu2">
-                    <li><a href="ubicacion.html">Ubicacion</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="nosotras.html">Nosotras</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="iconos">
-            <i class="fa-solid fa-right-to-bracket "></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lavenderblush;">
+            <div class="container">
+                <a class="navbar-brand navbar-toggler" href="#">
+                    <img class="logo" src="../assets/image/logo.jpg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><b>Inicio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="novedades.html"><b>Novedades</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html"><b>Contacto</b></a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a class="navbar-brand collapse navbar-collapse " href="index.html">
+                            <img class="logo" src="../assets/image/logo.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ubicacion.html"><b>Ubicacion</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html"><b>Productos</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotras.html"><b>Nosotras</b></a>
+                        </li>
+                        </li>
+                    </ul>
+                    <div class="iconos">
+                        <i class="fa-solid fa-right-to-bracket "></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="container novedades-seccion1">
@@ -110,11 +126,11 @@
                         <div class=" row d-flex justify-content center">
                             <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0"
                                         class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="1"
                                         aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="2"
                                         aria-label="Slide 3"></button>
                                 </div>
                                 <div class="carousel-inner carrusel">
@@ -156,6 +172,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
     <footer class="container-fluid footer">
         <div class="row fila-footer">
